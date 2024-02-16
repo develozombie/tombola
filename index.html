@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Kayari Tombola</title>
+    <style>
+        .container {
+        margin: 20px;
+        display: flex;
+        padding: 20px;
+        width: 400px;
+        }
+        .green-block {
+            text-align: center;
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: fit-content;
+            height: fit-content;
+        }
+    </style>
+    <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+    <div class="green-block">
+        <img src="kayari.png"/></br>
+        <form action="/form" method="POST" id="tombola" class="tombola">
+            <input autofocus type="text" name="codigo" id="codigo" style="border-radius: 6px; padding: 10px; font-size: large; width:500px;"></input>
+            <input type="submit" name="submit" value="Jugar!" style="border-radius: 6px; padding: 10px; font-size: large;"></input>
+        </form>
+        <div class="result" id="result"></div>
+    </div>
+    </div>
+</body>
+
+</html>
